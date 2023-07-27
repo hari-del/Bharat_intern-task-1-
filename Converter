@@ -1,0 +1,236 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale-1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Charm&family=Pacifico&family=Prompt:wght@100&family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faustina&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    
+	<style>
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width:100%;
+	height:100vh;
+	background:white;
+	background-size:cover;
+
+}
+
+.logo {
+  color:white;
+  font-size: 40px;
+  text-transform:uppercase;
+  margin-right:30px;
+   font-family: 'Faustina', serif;
+   color:white;
+}
+
+.logo span {
+  color: white;
+}
+
+.menu {
+  background-color: #00ced1;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  
+  
+  position: relative;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu ul li a {
+  font-size: 15px;
+  color: white;
+  font-weight:bold;
+  text-decoration:none;
+
+  text-transform:uppercase;
+
+  transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #191970;
+}
+
+
+
+main{
+	width:100%;
+	height:85vh;
+	display:flex;
+	
+	align-items:left-side;
+	margin-top:100px;
+	margin-left:200px;
+	
+	color:#191970;
+	
+}
+section{
+	
+}
+section h3{
+	font-size:35px;
+	font-weight:200;
+	font-family: 'Pacifico';
+	
+}
+section h2{
+	margin:30px 0 20px 0;
+	font-size:45px;
+	font-weight:1000;
+	font-family: 'Pacifico', cursive;
+	text-transform:uppercase;
+}
+
+.image-sec img{
+	margin-left:250px;
+	width:270px;
+	height:55vh;
+	border-radius:30px;
+
+}
+.icons  i{
+	margin-top:20px;
+	margin-left:10px;
+	width:30px;
+	height:300;
+	  font-size: 2em;
+	
+}
+.container{
+   
+   width:40%;
+   height:50vh;
+   border:2px solid #191970;
+   padding:3px;
+   border-radius:5px;
+   margin-left:300px;
+}
+.container h3{
+  
+  text-align:center;
+  background:#00ced1;
+font-weight: bold;
+text-transform: uppercase;
+
+  
+}
+.container label {
+margin-left:40px;
+font-weight:bold;
+text-transform:uppercase;
+}
+.container input{
+margin-left:20px;
+border:2px solid #191970;
+}
+.container h2{
+margin-left:40px;
+font-weight:bold;
+text-transform:uppercase;
+
+}
+.container button{
+    margin-left:420px;
+	width:80px;
+	background:#00ced1;
+	font-weight:bold;
+	color:white;
+	border:2px solid #191970;
+	
+}
+.container h2 span{
+ position:relative;
+ color:black;
+ 
+}
+.image-section img
+{
+
+height:50vh;
+}
+
+	
+
+
+</style>
+<title>homepage</title>
+</head>
+<body>
+<nav>
+<div class="menu">
+<h1 class="logo">make it easy</h1>
+<ul>
+<li>
+<a href="temp.html">Home</a>
+</li>
+<li>
+<a href="about.html">converter</a>
+</li>
+</ul>
+</div>
+</nav>
+<main>
+<div class="image-section">
+<img src="images/t2.jpg"></div>
+<div class="container">
+
+<h3> converter</h3>
+<br>
+
+<label>Celsius</label>
+<input type="text" id="s" name="t1"><br><br>
+ <button  onclick="show_result()">calculate</button>
+ <br>
+<h2>fahrenheit-<span class="per"><input type="number" id="res" readonly></span></h2>
+
+
+
+
+</main>
+<script>
+		 function show_result()
+	{
+	
+	let c = parseInt(document.getElementById("s").value);
+	
+	f=parseFloat(c)*(9/5)+32;
+	document.getElementById("res").value=f;
+
+	}
+    </script>
+   
+</body>
+</html>
+
+
